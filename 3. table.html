@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>table</title>
+  </head>
+  <body>
+    <h1><a href="0. learning html.html">HTML</a></h1>
+    <h2>표 만들기</h2>
+    <p>표(table)를 만들어 봅시다</p>
+    <p>&lt;table&gt;<br>
+      &lt;tr&gt;(하나의 행을 나타냅니다)<br>
+      &nbsp;&lt;th&gt;헤드데이터&lt;/th&gt;&lt;th&gt;헤드데이터&lt;/th&gt;<br>
+      &lt;/tr&gt;<br>
+      &lt;tr&gt;<br>
+      &nbsp;&lt;td&gt;데이터&lt;/td&gt;&lt;td&gt;데이터&lt;/td&gt;<br>
+      &lt;/tr&gt;<br>
+      &lt;tr&gt;<br>
+      &nbsp;&lt;td&gt;데이터&lt;/td&gt;&lt;td&gt;데이터&lt;/td&gt;<br>
+      &lt;/tr&gt;<br>
+      &lt;/table&gt;<br>
+    </p>
+    <table border="2">
+      <thead>
+        <tr>
+          <th>이름</th> <th>성별</th> <th>나이</th> <th>회비</th>
+        </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>세린1</td> <td>남</td> <td rowspan="2">23</td> <td>500원</td>
+      </tr>
+      <tr>
+        <td>세린2</td> <td>여</td> <td>200원</td>
+      </tr>
+      <tr>
+        <td colspan="2">농담곰</td> <td rowspan="2">비공개</td> <td>1500원</td>
+      </tr>
+      <tr>
+        <td>메이드</td> <td>모름</td> <td>1000원</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <td colspan="3">합계</td> <td>3200원</td>
+    </tfoot>
+    </table>
+  </body>
+</html>
