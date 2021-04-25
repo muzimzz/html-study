@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>radio, checkbox</title>
+  </head>
+
+  <body>
+    <form action="http://localhost/school.php">
+      <h1>과목 선택 (radio)</h1>
+      <p>
+        <strong>과목1</strong>
+        국어<input type="radio" name="subject" value="korean">
+        수학<input type="radio" name="subject" value="math">
+        영어<input type="radio" name="subject" value="english">
+      </p>
+      <p> 
+        <strong>과목2</strong>
+        국어<input type="radio" name="subject2" value="korean">
+        수학<input type="radio" name="subject2" value="math">
+        영어<input type="radio" name="subject2" value="english">
+      </p>   
+      <h1>급식 선택 (checkbox)</h1>
+      <p> 
+        <strong>옵션</strong>
+        조식<input type="checkbox" name="menu" value="breakfast">
+        중식<input type="checkbox" name="menu" value="lunch">
+        석식<input type="checkbox" name="menu" value="dinner">
+      </p>
+      <input type="submit">
+    </form>
+  </body>
+</html>
