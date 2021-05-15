@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>file upload</title>
+  </head>
+
+  <body>
+    <h1>F12: enctype 참고</h1>
+    <form action="http://localhost/upload.php" method="post" enctype="multipart/form-data">
+      <!-- 파일이나 이미지타입을 전송할 시에 enctype="mmultipart/form-data"는 필수!-->
+      <p>
+        <label>파일명: <input type="text" name="id">
+        </label>
+      </p>
+      <p>
+        <label><input type="file" name="profile">
+        </label>
+      </p>
+      <input type="submit">
+    </form>
+    <br><br>
+    <form action="http://localhost/others.php">
+      <p>
+        <label>탄생일: 
+          <input type="date" name="birthday">
+        </label>
+      </p> 
+      <p>
+        <label>탄생색: 
+          <input type="color" name="birthcolor">
+        </label>
+      </p>
+      <p>
+        <label>탄생시간: 
+          <input type="time" name="birthtime">
+        </label>
+      </p>
+      <input type="submit">
+    </form>
+
+    <h3><a href="http://jun.hansung.ac.kr/CWP/htmls/HTML%20Input%20Types.html">
+    다양한 HTML input요소의 타입</a></h3>
+  </body>
+
+</html>
